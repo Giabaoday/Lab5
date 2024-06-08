@@ -1,4 +1,6 @@
-namespace Bai4_RapPhim
+using Bai4_RapPhim;
+
+namespace Bai3_RapPhim
 {
     internal static class Program
     {
