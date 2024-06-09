@@ -102,9 +102,8 @@
             label2.AutoSize = true;
             label2.Location = new Point(12, 433);
             label2.Name = "label2";
-            label2.Size = new Size(135, 20);
+            label2.Size = new Size(0, 20);
             label2.TabIndex = 5;
-            label2.Text = "Chưa kết nối server";
             // 
             // sendButton
             // 

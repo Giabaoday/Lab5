@@ -37,7 +37,7 @@ namespace Bai4
                 var smtpClient = new SmtpClient();
                 smtpClient.Connect("smtp.gmail.com", 465, true);
                 smtpClient.Authenticate("gbao5252@gmail.com", "xwkh lrdn xduw immd");
-                label2.Text = "Kết nối thành công";
+                label2.Text = "Kết nối ổn định";
             }
             catch (Exception ex)
             {
@@ -63,7 +63,7 @@ namespace Bai4
                 message.Subject = "Mời bạn ăn cùng";
                 message.Body = new TextPart("html")
                 {
-                    //send the food info to the invited email, includign name, address, price and img url, the name is infos[0], address is infos[2], price is infos[1] and img url is infos[4]
+                    //send the food info to the invited email, including name, address, price and img url, the name is infos[0], address is infos[2], price is infos[1] and img url is infos[4]
                     Text = "<h1>" + infos[0] + "</h1><br><h2>Địa chỉ: " + infos[2] + "</h2><br><h2>Giá: " + infos[1] + "</h2><br><img src='" + infos[4] + "'/>"
 
                 };

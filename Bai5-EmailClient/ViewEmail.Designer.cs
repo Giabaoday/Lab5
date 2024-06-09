@@ -60,18 +60,16 @@
             fromlb.AutoSize = true;
             fromlb.Location = new Point(122, 14);
             fromlb.Name = "fromlb";
-            fromlb.Size = new Size(50, 20);
+            fromlb.Size = new Size(0, 20);
             fromlb.TabIndex = 0;
-            fromlb.Text = "label1";
             // 
             // tolb
             // 
             tolb.AutoSize = true;
             tolb.Location = new Point(122, 46);
             tolb.Name = "tolb";
-            tolb.Size = new Size(50, 20);
+            tolb.Size = new Size(0, 20);
             tolb.TabIndex = 0;
-            tolb.Text = "label1";
             // 
             // reply
             // 
@@ -89,9 +87,8 @@
             subjectlb.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             subjectlb.Location = new Point(12, 89);
             subjectlb.Name = "subjectlb";
-            subjectlb.Size = new Size(96, 38);
+            subjectlb.Size = new Size(0, 38);
             subjectlb.TabIndex = 0;
-            subjectlb.Text = "label1";
             // 
             // panel1
             // 

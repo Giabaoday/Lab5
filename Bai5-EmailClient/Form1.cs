@@ -41,7 +41,6 @@ namespace Bai5_EmailClient
             }
 
         }
-        //khi click vào một email trong listview, hiển thị nội dung email trong form ViewEmail
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listView1.SelectedItems.Count > 0)

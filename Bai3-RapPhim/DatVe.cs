@@ -103,7 +103,8 @@ namespace Bai4_RapPhim
             message.Subject = "Xác nhận đặt vé";
             message.Body = new TextPart("html")
             {
-                Text = "<h1>Xác nhận đặt vé</h1><br><h2>Tên khách hàng: " + name.Text + "</h2><br><h2>Phim: " + filmDuocChon.Name + "</h2><br><h2>Số ghế đặt: " + gheDuocChon + "</h2><br><h2>Tổng tiền: " + tongtien + "</h2><br><img src='" + filmDuocChon.ImageLink + "'/>"
+                Text = "<h1>Xác nhận đặt vé</h1><br><h2>Tên khách hàng: " + name.Text + "</h2><br><h2>Phim: " + filmDuocChon.Name + "</h2><br><h2>Số ghế đặt: " + gheDuocChon + 
+                "</h2><br><h2>Tổng tiền: " + tongtien + "</h2><br><img src='" + filmDuocChon.ImageLink + "'/>"
             };
             smtpClient.Send(message);
             name.Text = "";
