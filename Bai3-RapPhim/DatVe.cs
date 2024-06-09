@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using MailKit;
 using MailKit.Net.Smtp;
 using MimeKit;
-namespace Bai4_RapPhim
+namespace Bai3_RapPhim
 {
     public partial class DatVe : Form
     {
@@ -58,12 +58,12 @@ namespace Bai4_RapPhim
                 MessageBox.Show("Vui lòng nhập tên người đặt vé");
                 return;
             }
-                   
+
             //duyệt qua các checkbox nằm trong groupbox
             foreach (Control control in groupBox1.Controls)
             {
                 if (control is CheckBox)
-                {                  
+                {
                     CheckBox checkBox = control as CheckBox;
                     if (checkBox.Checked)
                     {
@@ -82,7 +82,7 @@ namespace Bai4_RapPhim
                         {
                             tongtien += giaVeChuan * 2;
                         }
-                       
+
                     }
                 }
             }
@@ -92,7 +92,7 @@ namespace Bai4_RapPhim
                 return;
             }
             money.Text = tongtien.ToString();
-            MessageBox.Show("Đặt vé thành công \nTên khách hàng:" + name.Text + "\n" + "Phim: " + comboBox1.SelectedItem.ToString() + "\n" + "Số ghế đặt: " + gheDuocChon + "\n" + "Tổng tiền: " + tongtien );
+            MessageBox.Show("Đặt vé thành công \nTên khách hàng:" + name.Text + "\n" + "Phim: " + comboBox1.SelectedItem.ToString() + "\n" + "Số ghế đặt: " + gheDuocChon + "\n" + "Tổng tiền: " + tongtien);
             var smtpClient = new SmtpClient();
             smtpClient.Connect("smtp.gmail.com", 465, true);
             smtpClient.Authenticate("gbao5252@gmail.com", "xwkh lrdn xduw immd");
@@ -103,7 +103,7 @@ namespace Bai4_RapPhim
             message.Subject = "Xác nhận đặt vé";
             message.Body = new TextPart("html")
             {
-                Text = "<h1>Xác nhận đặt vé</h1><br><h2>Tên khách hàng: " + name.Text + "</h2><br><h2>Phim: " + filmDuocChon.Name + "</h2><br><h2>Số ghế đặt: " + gheDuocChon + 
+                Text = "<h1>Xác nhận đặt vé</h1><br><h2>Tên khách hàng: " + name.Text + "</h2><br><h2>Phim: " + filmDuocChon.Name + "</h2><br><h2>Số ghế đặt: " + gheDuocChon +
                 "</h2><br><h2>Tổng tiền: " + tongtien + "</h2><br><img src='" + filmDuocChon.ImageLink + "'/>"
             };
             smtpClient.Send(message);

@@ -1,5 +1,4 @@
-
-namespace Bai3_RapPhim
+namespace Menu
 {
     internal static class Program
     {

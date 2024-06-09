@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using HtmlAgilityPack;
-namespace Bai4_RapPhim
+namespace Bai3_RapPhim
 {
     public partial class Form1 : Form
     {

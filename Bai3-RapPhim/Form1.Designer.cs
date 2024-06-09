@@ -1,4 +1,4 @@
-﻿namespace Bai4_RapPhim
+﻿namespace Bai3_RapPhim
 {
     partial class Form1
     {
